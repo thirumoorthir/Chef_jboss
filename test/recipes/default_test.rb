@@ -22,3 +22,6 @@ describe package(jboss) do
   skip 'hope this works'
 end 
 
+describe package(splunk) do
+  it { should be_installed}
+end
