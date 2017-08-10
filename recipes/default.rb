@@ -20,4 +20,5 @@ end
    action :install
    source '/tmp/splunkforwarder-6.6.2-4b804538c686-linux-2.6-x86_64.rpm'
   end
-  
+package 'java-1.8.0-openjdk.x86_64'
+
