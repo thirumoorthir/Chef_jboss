@@ -9,9 +9,9 @@ end
 
 
 bash 'extract_module' do
-  cwd ::File.dirname(/opt)
+  cwd '/opt'
   code <<-EOH
     tar xzf /tmp/splunkforwarder-7.0.1-2b5b15c4ee89-Linux-x86_64.tgz -C /opt
     EOH
-  not_if { ::File.exist?(/opt/splunkforwarder)
+  not_if { ::File.exist?(/opt/splunkforwarder)}
 end
